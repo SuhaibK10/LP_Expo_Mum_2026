@@ -615,7 +615,7 @@ function ThankYouScreen({ userName }) {
 }
 
 // ─── GOOGLE SHEETS INTEGRATION ───
-const GOOGLE_SHEETS_URL = "18iZvC7ROLIdksTrSfygoCYh1W7yunBbFTz-MmScCVwA";
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbydPj8XapZdzFithAbLBZF0FUjWVabgtE_U1AMnqDXvIu-q0qNq5FdJkm5HzHcBFgoe/exec";
 
 function submitToGoogleSheets(data) {
   if (GOOGLE_SHEETS_URL === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
