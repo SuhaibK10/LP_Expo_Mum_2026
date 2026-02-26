@@ -131,7 +131,7 @@ function WelcomeScreen({ onStart }) {
         transform: ready ? "translateY(0)" : "translateY(20px)",
         transition: `all 0.8s ${T.ease} 0.1s`,
       }}>
-        Welcome
+        Welcome to Louis Polo
       </h1>
 
       <p style={{
@@ -548,11 +548,33 @@ function ThankYouScreen({ userName }) {
         {"We\u2019re glad you stopped by.\nWe\u2019ll be in touch soon."}
       </p>
 
-      <div style={{
-        marginTop: 48, width: "100%", maxWidth: 320,
+      {/* Download Catalogue Button */}
+      <a href="/catalogue.pdf" download="Louis-Polo-Catalogue.pdf" style={{
+        display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
+        marginTop: 40, width: "100%", maxWidth: 320,
+        fontFamily: T.sans, fontSize: 14, fontWeight: 500,
+        letterSpacing: "0.06em",
+        color: T.white, background: T.black,
+        border: "none", borderRadius: 100,
+        padding: "16px 32px", cursor: "pointer",
+        textDecoration: "none",
         opacity: ready ? 1 : 0,
         transform: ready ? "translateY(0)" : "translateY(16px)",
-        transition: `all 0.7s ${T.ease} 0.35s`,
+        transition: `all 0.7s ${T.ease} 0.3s`,
+      }}>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download Our Catalogue
+      </a>
+
+      <div style={{
+        marginTop: 36, width: "100%", maxWidth: 320,
+        opacity: ready ? 1 : 0,
+        transform: ready ? "translateY(0)" : "translateY(16px)",
+        transition: `all 0.7s ${T.ease} 0.4s`,
       }}>
         <p style={{
           fontFamily: T.sans, fontSize: 10, fontWeight: 500,
@@ -593,7 +615,7 @@ function ThankYouScreen({ userName }) {
 }
 
 // ─── GOOGLE SHEETS INTEGRATION ───
-const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbydPj8XapZdzFithAbLBZF0FUjWVabgtE_U1AMnqDXvIu-q0qNq5FdJkm5HzHcBFgoe/exec";
+const GOOGLE_SHEETS_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
 
 function submitToGoogleSheets(data) {
   if (GOOGLE_SHEETS_URL === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
