@@ -615,7 +615,7 @@ function ThankYouScreen({ userName }) {
 }
 
 // ─── GOOGLE SHEETS INTEGRATION ───
-const GOOGLE_SHEETS_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+const GOOGLE_SHEETS_URL = "18iZvC7ROLIdksTrSfygoCYh1W7yunBbFTz-MmScCVwA";
 
 function submitToGoogleSheets(data) {
   if (GOOGLE_SHEETS_URL === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
